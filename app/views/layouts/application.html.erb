@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+<!-- 为每个controller加载它自己的css，分而治之。 -->
 <body class='<%= controller.controller_name %>'>
 
 <%= yield %>
